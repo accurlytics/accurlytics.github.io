@@ -2031,6 +2031,23 @@ body {
   border-radius: 3px;
 }
 
+.share-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #124d13;
+  color: #F7F6BB;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.share-button:hover {
+  background-color: #fff;
+  border: 3px solid #124d13;
+  color: #124d13;
+}
+
 #blog-author {
   border-bottom: 1px solid #dce4e6;
   padding-bottom: 20px;

@@ -5,6 +5,10 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content="Standard Blog Post Formating Medigo">
+    <meta property="og:description" content="Your page description goes here.">
+    <meta property="og:image" content="../images1/includes/blog2.jpg">
+    <meta property="og:url" content="https://accurlytics.com/blog-post/blog-single.html">
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -122,7 +126,26 @@
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, quisquam, aut, eum, natus excepturi impedit ipsa rerum ratione id dolores ducimus minus eos quod veniam similique fugit illum error facilis!
 								</blockquote>
 								<p>Culpa, iure, debitis, exercitationem, vitae aperiam excepturi explicabo distinctio ea nisi illo temporibus dignissimos praesentium dolorem reiciendis iste officiis odio nemo dolor illum laboriosam? Architecto, earum accusamus sequi distinctio veniam amet ea quibusdam eos sapiente!</p>
-								<!-- <div class="tag-items">
+                <br>
+                <div>
+                  <button class="share-button" id="copy-button" data-clipboard-text="accurlytics.com/blog-post/blog-single.html">
+                    <i class="fas fa-share"></i> Share
+                  </button>
+                </div>
+          
+              <script>
+                  document.getElementById("copy-button").addEventListener("click", function() {
+                      var textToCopy = this.getAttribute("data-clipboard-text");
+                      var tempInput = document.createElement("input");
+                      tempInput.value = textToCopy;
+                      document.body.appendChild(tempInput);
+                      tempInput.select();
+                      document.execCommand("copy");
+                      document.body.removeChild(tempInput);
+                      alert("Link Copied");
+                  });
+              </script>
+                <!-- <div class="tag-items">
                                     <span class="small-text">Tags:</span>
                                     <a href="#" rel="tag">business</a>
                                     <a href="#" rel="tag">html</a>
@@ -136,7 +159,7 @@
 					<div class="col-md-12">
 						<div id="blog-author" class="clearfix">
                             <a href="#" class="blog-author-img pull-left">
-                                <img src="../images1/includes/author.png" style="width: 40px;">
+                                <img src="../images1/includes/author.png" style="width: 50px; margin-bottom: 10px;">
                             </a>
                             <div class="blog-author-info">
                                 <h4 class="author-name"><a href="#">Candy Sharp</a></h4>
