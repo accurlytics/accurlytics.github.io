@@ -2000,7 +2000,7 @@ body {
   color: #63bc63;
 }
 .post-blog .blog-content h3 {
-  margin: 10px 0 25px 0;
+  margin: 10px 0 10px 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: 600;
@@ -2012,6 +2012,23 @@ body {
   color: #63bc63;
 }
 
+.post-blog .blog-content p{
+  font-size: 18px;
+  margin: 10px 0 10px 0;
+  text-align: justify;
+}
+
+.quote-text {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0,0.1);
+  font-size: 18px;
+  font-weight: 600;
+  color: #124d13; /* Dark green color */
+  line-height: 1.5;
+}
+
 .meta-date:after, .meta-comments:after {
   content: '|';
   margin-left: 10px;
@@ -2019,11 +2036,21 @@ body {
 
 .blog-content .tableauPlaceholder{
   position: relative;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.blog-content .tableauPlaceholder img{
+  justify-content: center;
 }
 
 @media (max-width: 767px){
   .blog-content .tableauPlaceholder{
     position: relative;
+    
   }
 }
 
@@ -2231,9 +2258,7 @@ body {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #dce4e6;
-  display: flex;
-
-
+  display: inline-flex;
 }
 
 .col-md-12 .last-post {
@@ -2247,9 +2272,11 @@ body {
 
 .last-post .thumb {
   overflow: hidden;
+  width: 50%;
 }
 .last-post .thumb img {
-  width: 100%;
+  width: 50%;
+  margin-right: 1px;
 }
 .last-post .content {
   overflow: hidden;
@@ -2257,7 +2284,7 @@ body {
 .last-post .content span {
   color: #aaaaaa;
   font-size: 14px;
-  margin: 0 0 10px 0;
+  margin: 0 0 5px 0;
   line-height: 14px;
 }
 .last-post .content h4 {
