@@ -136,6 +136,11 @@ body {
 	max-width: 66px; border-radius: 50%;
 }
 
+a {
+  color: green;
+}
+
+
 .main-button a {
   font-size: 14px;
   color: #F7F6BB;
@@ -1714,6 +1719,8 @@ Most Asked Style
   padding-top: 0;
 }
 
+
+
 .most-asked #free-quote {
   border-radius: 23px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
@@ -1939,6 +1946,12 @@ body {
   color: white;
 }
 
+.anchor {
+  position: absolute;
+  transform: translateY(-50vh);
+}
+
+
 .latest-posts {
   padding-bottom: 80px;
 }
@@ -1988,6 +2001,7 @@ body {
   width: 100%;
   height: auto;
 }
+
 .post-blog .blog-content span {
   color: #aaaaaa;
   margin-right: 10px;
@@ -1999,9 +2013,20 @@ body {
 .post-blog .blog-content span a:hover {
   color: #63bc63;
 }
-.post-blog .blog-content h3 {
+.post-blog .blog-content h1 {
+  margin: 10px 0 10px 0;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.post-blog .blog-content h2 {
   margin: 10px 0 10px 0;
   font-size: 24px;
+  line-height: 30px;
+}
+.post-blog .blog-content h3 {
+  margin: 10px 0 10px 0;
+  font-size: 20px;
   line-height: 30px;
   font-weight: 600;
 }
@@ -2013,10 +2038,10 @@ body {
 }
 
 .post-blog .blog-content p{
-  font-size: 18px;
+  font-size: 17px;
   margin: 10px 0 10px 0;
   text-align: justify;
-  line-height: 1.3em;
+  line-height: 1.4em;
 }
 
 .quote-text {
