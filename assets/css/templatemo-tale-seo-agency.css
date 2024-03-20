@@ -2016,6 +2016,7 @@ body {
   font-size: 18px;
   margin: 10px 0 10px 0;
   text-align: justify;
+  line-height: 1.3em;
 }
 
 .quote-text {
@@ -2050,8 +2051,30 @@ body {
 @media (max-width: 767px){
   .blog-content .tableauPlaceholder{
     position: relative;
-    
   }
+
+  .post-blog .blog-content h1{
+    font-size: 20px;
+
+  }
+
+  .post-blog .blog-content h2{
+    font-size: 16px;
+
+  }
+
+  .post-blog .blog-content h3{
+    font-size: 14px;
+
+  }
+  
+  .post-blog .blog-content p{
+    font-size: 12px;
+    margin: 10px 0 10px 0;
+    text-align: justify;
+    line-height: 1.4em;
+  }
+  
 }
 
 .tag-items {
