@@ -214,6 +214,14 @@ a {
   color: #87A922;
   font-style: normal;
 }
+.section-heading h1 em {
+  color: #87A922;
+  font-style: normal;
+}
+
+.section-heading h1 span {
+  color: #87A922;
+}
 
 .section-heading h2 span {
   color: #87A922;
