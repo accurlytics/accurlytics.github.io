@@ -1,0 +1,34 @@
+[
+    {
+        "date": "10 April 2024",
+        "author": "Cedric Asante",
+        "title": "Mapping The Workforce Landscape in Ghana",
+        "excerpt": "Employment is a crucial aspect of socio-economic development...",
+        "image": "assets/images/employment-in-ghana.png",
+        "link": "/blog-post/employment-landscape-in-ghana.html"
+    },
+    {
+        "date": "26 March 2024",
+        "author": "Cedric Asante",
+        "title": "Unlocking the Triumphs of the African Games: A Data Story",
+        "excerpt": "The African Games, formerly recognized as the All-African Games...",
+        "image": "assets/images/african-games-logo-accurlytics.png",
+        "link": "/blog-post/analytical-overview-of-champions-african-games.html"
+    },
+    {
+        "date": "24 March 2024",
+        "author": "Cedric Asante",
+        "title": "The Rich History of the African Games",
+        "excerpt": "The African Games, formerly recognized as the All-African Games...",
+        "image": "assets/images/accurlytics-african-games.jpg",
+        "link": "/blog-post/analytical-history-of-african-games.html"
+    },
+    {
+        "date": "20 March 2024",
+        "author": "Cedric Asante",
+        "title": "Incorporating Data Science Paradigms into Business for Strategic Decision Making",
+        "excerpt": "Data science encompasses a multifaceted approach to analyzing complex datasets, employing techniques from...",
+        "image": "assets/images/incorporate-ds-into-business.jpg",
+        "link": "/blog-post/incorportating-data-science-paradigms-in-business.html"
+    }
+]

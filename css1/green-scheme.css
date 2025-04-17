@@ -1146,92 +1146,72 @@ blockquote {
   margin-right: 10px;
 }
 
-/*------------------------------------------------------
-	Sidebar Styling 
---------------------------------------------------------*/
-.sidebar {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
 
-.sidebar-widget {
-  margin-bottom: 60px;
-}
 
-.widget-title {
+.blog-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.blog-content {
+  padding: 20px 0;
+}
+.meta-date, .meta-author {
   font-size: 14px;
-  font-weight: 800;
-  margin: 0 0 30px 0;
-}
-
-.last-post {
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #dce4e6;
-}
-.last-post .thumb {
-  overflow: hidden;
+  color: #666;
   margin-right: 15px;
 }
-.last-post .thumb img {
-  width: 100%;
+.light-text {
+  color: #555;
+}
+.sidebar-widget {
+  margin-bottom: 30px;
+}
+.widget-title {
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 .last-post .content {
-  overflow: hidden;
+  margin-bottom: 15px;
 }
 .last-post .content span {
-  color: #aaaaaa;
-  font-size: 14px;
-  margin: 0 0 10px 0;
-  line-height: 14px;
+  font-size: 12px;
+  color: #999;
 }
 .last-post .content h4 {
   font-size: 16px;
-  font-weight: 600;
-  margin: 0;
+  margin: 5px 0;
 }
-.last-post .content h4 a {
-  color: #31373a;
-}
-.last-post .content h4 a:hover {
-  color: #63bc63;
-}
-
-.categories ul li:before {
-  content: '-';
-  color: #aaaaaa;
-  margin-right: 10px;
-}
-
-.thumbs {
-  margin-left: -6px;
-  overflow: hidden;
-}
-
-.thumbs li {
+.pages {
   list-style: none;
-  float: left;
-  margin: 6px;
-  width: 76px;
-  height: 76px;
-  overflow: hidden;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: 0;
+  text-align: center;
+  margin-top: 20px;
+}
+.pages li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.pages li a {
+  padding: 10px 15px;
+  border: 1px solid #145b0b;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #145b0b;
+}
+.pages li a.active, .pages li a:hover {
+  background-color: #145b0b;
+  color: #fff;
+}
+.pages li a.disabled {
+  color: #ccc;
+  border-color: #ccc;
+  pointer-events: none;
 }
 
-.thumbs li img {
-  display: block;
-  width: 100%;
-  padding: 3px;
-  background-color: #f1f4f5;
-}
-
-.thumbs li a img {
-  border: none;
-}
+/*------------------------------------------------------
+	Sidebar Styling 
+--------------------------------------------------------*/
 
 /*------------------------------------------------------
 	Contact Page Styling 
