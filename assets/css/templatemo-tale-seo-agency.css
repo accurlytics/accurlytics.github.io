@@ -866,16 +866,20 @@ Banner Style
 
 .main-banner {
   position: relative;
-  padding: 295px 0px 185px 0px;
+  padding: 200px 0px 0px 0px;
 }
 
 .main-banner:after {
-  content: url(../images/banner-right.png);
+  content: "";
+  background-image: url(../images/Header-banner-1.png);
+  background-size: contain; /* Ensures the image scales proportionally */
+  background-repeat: no-repeat;
   right: 0px;
   top: 140px;
+  height: 680px; /* Adjust the height */
+  width: 680px; /* Adjust the width */
   position: absolute;
   z-index: -1;
-
 }
 
 
@@ -945,13 +949,15 @@ Services Style
 }
 
 .services::before {
-  content: url(../images/services-left.png);
+  content: "";
+  background-image: url(../images/services-left.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   top: 80px;
-  left: 0;
+  left: 150px;
+  width:700px;
+  height: 700px;
   position: absolute;
-  width: 844px;
-  height: 714px;
-  z-index: -1;
 }
 
 
@@ -1076,7 +1082,7 @@ Infos Style
   background-size: cover;
   background-position: center center;
   padding: 120px 0px;
-  margin-top: 120px;
+  margin-top: 0px;
 }
 
 .infos .main-content {
@@ -1663,34 +1669,46 @@ Happy Steps Style
 
 /* 
 ---------------------------------------------
-Most Asked Style
+Serivces Grid Style
 --------------------------------------------- 
 */
 
-.most-asked {
-  position: relative;
+./* Services Grid */
+.services-grid {
+  margin-bottom: 40px;
+  padding: 30px 30px 30px 30px;
 }
 
-.most-asked .section-heading {
-  margin-bottom: 80px;
+.servicepage-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px 30px 30px 30px;
+  margin: 30px 0; /* Adds space on both top and bottom */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.most-asked .accordions .accordion {
-  border-bottom: 1px solid #eee;
+.servicepage-item:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-.most-asked .accordions .last-accordion {
-  border-bottom: none;
-}
-
-.most-asked .accordion-head {
-  padding: 35px 0px !important;  
+.servicepage-item h4 {
   font-size: 22px;
-  font-weight: 700;
-  color: #2a2a2a;
-  cursor: pointer;
-  transition: color 200ms ease-in-out;
-  
+  font-weight: 600;
+  color: #0a6110;
+  margin-bottom: 15px;
+}
+
+.servicepage-item p {
+  font-size: 15px;
+  color: #343434;
+  line-height: 1.6;
+  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -2282,6 +2300,23 @@ body {
   }
 }
 
+/*------------------------------------------------------
+  Blog pagination Styling
+--------------------------------------------------------*/
+#pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+#pagination a:hover {
+  background-color: #1a5c06;
+  color: #fff;
+}
+
 
 /*------------------------------------------------------
   Blog Carousel Styling
@@ -2375,7 +2410,7 @@ body {
 	Sidebar Styling 
 --------------------------------------------------------*/
 .sidebar {
-  padding: 20px 0;
+  padding: 20px 0px;
 }
 .sidebar-widget {
   margin-bottom: 30px;
@@ -2427,7 +2462,7 @@ body {
 }
 
 .last-post {
-  padding: 15px 10px 15px;
+  padding: 30px 5px 30px;
   border-bottom: 1px solid #dce4e6;
   display: block;
 }
@@ -2440,7 +2475,16 @@ body {
 
 }
 
+.col-md-4 .sidebar {
+  margin-top: 50px;
+}
+
 @media (max-width:767px){
+
+  .col-md-4 .sidebar {
+    margin-top: 0px;
+  }
+
   .last-post {
     padding: 15px 10px 15px;
     border-bottom: 1px solid #dce4e6;
@@ -2479,25 +2523,25 @@ body {
 .last-post .content span {
   color: #aaaaaa;
   font-size: 14px;
-  margin: 0 0 5px 0;
+  margin: 5px 5px 5px 5px;
   line-height: 14px;
 }
 .last-post .content h4 {
   font-size: 16px;
   font-weight: 600;
-  margin: 0;
+  margin: 5px 5px 5px 5px;
   
 }
 .last-post .content h4 a {
   color: #31373a;
 }
 .last-post .content h4 a:hover {
-  color: #63bc63;
+  color: #306830;
 }
 
 .categories ul li:before {
   content: '-';
-  color: #aaaaaa;
+  color: #868686;
   margin-right: 10px;
 }
 
