@@ -1821,10 +1821,19 @@ body {
     display: none;
   }
   .main-banner  {
-    padding: 185px 0px;
+    padding: 100px;
+  }
+
+  .main-banner .caption {
+    transform: scale(0.91);
+    margin: 10px -100px 10px -100px;
+    background-color: rgba(249, 249, 220, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 23px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   }
   .main-banner h4 {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 44px;
   }
   .main-banner span {
@@ -1852,6 +1861,47 @@ body {
   
 }
 
+@media (max-width: 464px) {
+  .main-banner  {
+    padding: 1px;
+    margin:200px 70px 1px 29px;
+  }
+
+  .main-banner .caption {
+    transform: scale(0.81);
+    margin: 1000px -100px 10px -100px;
+    background-color: rgba(249, 249, 220, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 23px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .section-heading h2 {
+    font-size: 26px;
+  }
+  .main-banner h4 {
+    font-size: 24px;
+    line-height: 44px;
+  }
+  .main-banner span {
+    margin: 0px 3px 0px 3px;
+  }
+  .main-banner .main-button a,
+  .main-banner .second-button a {
+    padding: 10px;
+   transform: scale(0.80);
+  }
+
+  .main-banner:after{
+    transform: scale(5);
+    margin-top: 1000px;
+  }
+}
+
+
+
+
+
 @media (max-width: 992px) {
   .pre-header .left-info ul li {
     padding-right: 10px;
@@ -1863,7 +1913,154 @@ body {
   .main-banner .caption {
     padding: 30px !important;
     text-align: center;
+    transform: scale(0.91);
+    background-color: rgba(249, 249, 220, 0.7);
+    backdrop-filter: blur(10px);
+    margin-top: -60px;
+    border-radius: 23px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    
   }
+  .header-area .main-nav .nav {
+    height: auto;
+    flex-basis: 100%;
+  }
+  .header-area .main-nav .logo {
+    position: relative;
+    left: 5px;
+    top: 0px;
+  }
+
+  .header-area .main-nav { /* Target main-nav inside header-area */
+    display: flex; /* Optional for logo alignment */
+    justify-content: space-between; /* Align items on opposite sides */
+  }
+
+
+  .background-header .main-nav .logo {
+    top: 0px;
+    flex: 0 0 auto;
+  }
+  .background-header .main-nav .border-button {
+    top: 0px !important;
+  }
+  .header-area .main-nav .border-button {
+    position: relative;
+    top: 15px;
+    right: 1000px;
+  }
+  .header-area.header-sticky .nav li a:hover{
+    color: #F7F6BB!important;
+    opacity: 1;
+  }
+
+  .header-area.header-sticky .nav li a.active {
+    color: #ffffff;
+  }
+  
+  .header-area.header-sticky .nav li.search-icon a {
+    width: 100%;
+  }
+  .header-area {
+    background-color: #124d13;
+    padding: 0px 15px;
+    height: 100px;
+    box-shadow: none;
+    text-align: center;
+  }
+  .header-area .container {
+    padding: 0px;
+  }
+  .header-area .logo {
+    margin-left: 0px;
+  }
+  .header-area .menu-trigger {
+    display: block !important;
+    right: 10px;
+  }
+
+  .menu-trigger {
+    left: 3px;
+  }
+
+
+  .header-area .main-nav .menu-trigger.active span:after {
+    background-color: #F7F6BB;
+  }
+  .header-area .main-nav {
+    overflow: hidden;
+  }
+  .header-area .main-nav .nav {
+    float: right;
+    width: 100%;
+    display: none;
+    -webkit-transition: all 0s ease 0s;
+    -moz-transition: all 0s ease 0s;
+    -o-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
+    margin-left: 0px;
+  }
+  .header-area .main-nav .nav li:first-child {
+    border-top: 1px solid #F7F6BB;
+  }
+  .header-area.header-sticky .nav {
+    margin-top: 100px !important;
+  }
+  .background-header.header-sticky .nav {
+    margin-top: 80px !important;
+  }
+  .header-area .main-nav .nav li {
+    width: 100%;
+    background: #F7F6BB;
+    border-bottom: 1px solid #F7F6BB;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .header-area .main-nav .nav li a {
+    height: 50px !important;
+    line-height: 50px !important;
+    padding: 0px !important;
+    border: none !important;
+    background: #124d13 !important;
+    color: #F7F6BB !important;
+  }
+  .header-area .main-nav .nav li a:hover {
+    background: #eee !important;
+    color: #114232!important;
+  }
+  .header-area .main-nav .nav li.has-sub ul.sub-menu {
+    position: relative;
+    visibility: inherit;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    top: 0px;
+    width: 100%;
+    box-shadow: none;
+    height: 0px;
+    transition: all 0s;
+  }
+  .header-area .main-nav .nav li.submenu ul li a {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .header-area .main-nav .nav li.submenu ul li a:hover:before {
+    width: 0px;
+  }
+  .header-area .main-nav .nav li.has-sub ul.sub-menu {
+    height: auto;
+  }
+  .header-area .main-nav .nav li.has-sub:after {
+    color: #87A922;
+    right: 30px;
+    font-size: 14px;
+    top: 15px;
+  }
+  .header-area .main-nav .nav li.submenu:hover ul, .header-area .main-nav .nav li.submenu:focus ul {
+    height: 0px;
+  }
+}
+
   .main-banner p {
     padding-right: 0%;
   }
@@ -1948,19 +2145,62 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .services{
+    margin-top: -10px;
+  }
   .services::before {
-    top: 60%;
+    top: 70%;
+    margin-left: -110px;
     transform: translateY(-50%);
+    z-index: -1;
   }
 }
 
 @media (max-width: 1400px) {
   .main-banner .caption {
-    background-color: #f9f9dc;
+    transform: scale(0.83);
+    background-color: rgba(249, 249, 220, 0.7);
+    backdrop-filter: blur(10px);
+    margin-top: -80px;
     padding: 60px;
     border-radius: 23px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  .main-banner p {
+    padding-right: 25px;
+    margin-right: 10px;
+  }
+
+
+  .main-banner .line-dec {
+    margin: 30px auto 20px auto;
   }
 }
+
+@media (max-width: 1200px) {
+  .main-banner .caption {
+    padding: 30px !important;
+    text-align: center;
+    transform: scale(0.85);
+    background-color: rgba(249, 249, 220, 0.7);
+    backdrop-filter: blur(10px);
+    margin-top: -80px;
+    margin-left: -60px;
+    padding: 20px 40px 20px 40px;
+    border-radius: 23px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  .main-banner h4 {
+    padding-right: 0%;
+  }
+  .main-banner p {
+    padding-right: 0%;
+  }
+  .main-banner .line-dec {
+    margin: 30px auto 20px auto;
+  }
+}
+
 
 /*------------------------------------------------------
 	Blog Styling 
@@ -2737,7 +2977,8 @@ body {
   }
 
   .main-banner:after {
-    display: none;
+    transform: scale(0.50);
+    margin: -300px -110px 0px 0px;
   
   }
 
